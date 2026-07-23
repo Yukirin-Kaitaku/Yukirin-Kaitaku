@@ -1,0 +1,32 @@
+<svg fill="none" viewBox="0 0 800 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes fall {
+          0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+          100% { transform: translateY(250px) rotate(360deg); opacity: 0; }
+        }
+        .falling {
+          position: absolute;
+          font-size: 24px;
+          animation: fall linear infinite;
+        }
+        /* 为不同的元素设置不同的动画时间和延迟，让飘落显得自然错落 */
+        .item1 { left: 10%; animation-duration: 4s; animation-delay: 0s; }
+        .item2 { left: 25%; animation-duration: 5s; animation-delay: 1s; }
+        .item3 { left: 40%; animation-duration: 3.5s; animation-delay: 2s; }
+        .item4 { left: 55%; animation-duration: 4.5s; animation-delay: 0.5s; }
+        .item5 { left: 70%; animation-duration: 5.5s; animation-delay: 1.5s; }
+        .item6 { left: 85%; animation-duration: 4s; animation-delay: 2.5s; }
+      </style>
+      <div style="position: relative; width: 100%; height: 200px; overflow: hidden;">
+        <div class="falling item1">❄️</div>
+        <div class="falling item2">🌸</div>
+        <div class="falling item3">❄️</div>
+        <div class="falling item4">🌸</div>
+        <div class="falling item5">❄️</div>
+        <div class="falling item6">🌸</div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
